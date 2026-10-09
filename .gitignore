@@ -1,0 +1,46 @@
+# Assignment brief (not part of the submission)
+high-throughput-inference-assignment.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Go / Rust / Node (in case the stack ends up polyglot)
+/bin/
+/target/
+node_modules/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Raw load-test output (the curated benchmark report lives in docs/, not here)
+/runs/
+*.prof
+*.pprof
+
+# Logs and local state
+*.log
+*.pid
+*.sqlite
+*.sqlite3
+*.db
+dump.rdb
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
