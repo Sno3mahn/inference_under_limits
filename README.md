@@ -8,10 +8,23 @@ provider's own call log.
 
 - **Python** (`python/`) is the complete reference: HTTP API, scheduler, retries, SQLite persistence,
   async batches with callbacks. It covers the 50k RPM baseline and validation scenarios 1–3.
-- **Go** (`go/`, in progress) is the hot path only (queues, limiter, dispatch, state accounting,
+- **Go** (`go/`) is the hot path only (queues, limiter, dispatch, retries, state accounting,
   in-process simulator), used for the 300k req/s and 1M req/s benchmarks.
 
-Design: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Measured results and the bugs they surfaced:
+## Results at a glance
+
+| Goal | Result | Limit violations |
+|---|---|---|
+| 50k RPM capacity (Python, full system) | 48.5k/min sustained, every minute ≥ 95.9% of the limit | 0 |
+| Limits changed live (Python) | adapts with no restart; the other model unaffected | 0 |
+| Batch of 10k with flaky callback (Python) | ack 79 ms, callback delivered on 3rd attempt, ids exactly once | 0 |
+| 300k req/s required (Go) | 302.8k/s, 3/3 runs, many models and one split model | 0 |
+| 1M req/s stretch (Go) | 1.009M/s, 3/3 runs | 0 |
+| Headroom (Go, limits off) | ≥ 11M/s on 2.3 cores | n/a |
+
+Violations are counted from the provider simulator's own call record, not the gateway's counters.
+Full report, charts and the 10B requests/minute plan: [`docs/BENCHMARKS.md`](docs/BENCHMARKS.md).
+Design: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Bugs found along the way:
 [`docs/FINDINGS.md`](docs/FINDINGS.md).
 
 ## Quick start
@@ -123,6 +136,26 @@ Every scenario also checks:
 - **accounting:** submitted = accepted + rejected (with no invalid submissions or transport errors), and
   every accepted request reached exactly one final state, both in the API and in the database.
 
+## Go benchmarks
+
+Requires Go ≥ 1.24. Each command runs 3 × 75 s and reports the median run.
+
+| Command | What it shows |
+|---|---|
+| `make go-test` | limiter and engine tests (including one that fails if the limiter leaks or starves) |
+| `make bench-300k` | 300k req/s across 64 models, each model on one shard |
+| `make bench-300k-spread` | 300k req/s for one model whose limit is split across every shard |
+| `make bench-1m` | 1M req/s stretch |
+| `make bench-ceiling` | limits disabled, 11M req/s offered: how much headroom the engine has |
+| `make bench-charts` | rebuild the throughput chart from `runs/go/*.json` |
+
+Flags (`cd go && go run ./cmd/bench -h`): `-target`, `-layout pinned|spread`, `-models`, `-duration`,
+`-warmup`, `-repeats`, `-ceiling`, `-cpuprofile`, and the simulated provider's latency and failure rates.
+Each run prints a summary and saves every number to `runs/go/<name>.json`.
+
+The Go engine has no HTTP, database or callbacks: it measures the scheduling core. See
+[`docs/BENCHMARKS.md`](docs/BENCHMARKS.md) for what that does and doesn't prove.
+
 ## Key design decisions
 
 Full reasoning in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). In short:
@@ -165,12 +198,14 @@ Full reasoning in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). In short:
 
 ```
 config/            models.yaml, scenarios/*.yaml
-docs/              ARCHITECTURE.md, FINDINGS.md, BENCHMARKS.md
+docs/              ARCHITECTURE.md, FINDINGS.md, BENCHMARKS.md, results/ (curated run reports)
 python/gateway/    limiter, scheduler, tracker, store, batches, callbacks, FastAPI app
 python/simulator/  provider simulator (aiohttp) with independent limit enforcement and a call log
 python/loadgen/    open-loop load generator + callback receiver
 python/verify/     checks + report/charts from a run directory
 python/scenarios/  end-to-end scenario runner
 python/tests/      unit, property, and end-to-end tests
-go/                hot-path benchmark (300k / 1M req/s)
+go/limiter/        bucketed sliding-window limiter + pacer
+go/engine/         shards, lanes, timing wheel, in-process provider
+go/cmd/bench/      benchmark command
 ```

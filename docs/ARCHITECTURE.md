@@ -304,47 +304,50 @@ Measured numbers and projections are kept in separate sections, and the simulati
 
 ## 12. Python vs Go
 
-Same boxes, different implementation.
+Same design, different bookkeeping.
 
 | | Python, scenarios 1–3 | Go, 300k/s and 1M/s benchmarks |
 |---|---|---|
-| API | FastAPI + uvicorn | None. Requests are generated in-process |
-| Queues | `asyncio.Queue` per model | Channels, sharded per CPU core |
-| Sliding window | Exact deque of timestamps | Ring of 100 ms slots, O(1) per decision |
-| Provider | HTTP to the simulator server | Function call, latency modeled with a timer |
-| State | SQLite + in-memory | In-memory counters only |
-| Callbacks | Yes | No (stated as out of scope) |
+| API | FastAPI + uvicorn | None. An open-loop generator in the same process |
+| Concurrency | One asyncio scheduler task per model | One goroutine per **shard**; each shard owns its **lanes** (a model's queue + limiter) and takes no locks |
+| Sliding window | Exact log, one entry per send | Ring of 10 ms buckets; a bucket expires only when its *end* is 60 s old, so it can only over-count. Constant memory at 1M sends/s |
+| Pacer | Token bucket, 1 s burst | Same |
+| Provider | HTTP to the simulator process | Function call that decides outcome and latency; the request then waits in a **timing wheel** (1 ms slots, O(1) per request) |
+| Retries | Backoff with full jitter, retries served first | Same |
+| One model on many cores | n/a (one process) | `spread` layout: each shard enforces 1/N of the model's limit |
+| State | SQLite + in-memory | In-memory counters; every request is finished in exactly one function |
+| Callbacks | Yes | No (out of scope) |
 
-The Go benchmark measures **completions**: the simulated provider call has reached a final state.
-It does not count acks. It has no network hop, so its numbers are an upper bound for the gateway logic and
-not an end-to-end figure. The report says so.
+The Go benchmark counts **completions**: a request reached a final state at the simulated provider.
+With no network hop or persistence, it measures the scheduling core, not the full service.
+Results and their caveats: [BENCHMARKS.md](BENCHMARKS.md).
 
 ## 13. Towards 10 billion requests per minute (projection)
 
-10B/min ≈ 167M/s. No single machine does that. Outline (to be expanded with measured per-core numbers):
-- **Shard by model and tenant** across many gateway nodes. Each node owns a slice of the traffic.
-- **Hand out capacity in leases.** A central budget service gives each node "you may use X RPM
-  for the next N seconds" and rebalances based on demand. The nodes rate limit locally, with no
-  per-request coordination.
-- **Use a durable log (e.g. Kafka) for ingest** instead of a database per request. Batch and results state
-  goes in a horizontally scaled store.
-- **Capacity maths:** if one Go core sustains *X* completions/s, then 167M/s needs about 167M / X cores,
-  plus overhead for leases and replication.
+10B/min ≈ 167M/s. The measured numbers and the full plan are in
+[BENCHMARKS.md](BENCHMARKS.md#projection-10-billion-requests-per-minute). In short:
+- **The scheduling core isn't the bottleneck.** About 0.1–0.2 core per 1M req/s was measured, so tens of cores in total.
+- **Ingest is.** Clients submit in batches, and a durable log (Kafka or similar) partitioned by model sits in front of the gateways.
+- **Limits are split by leases.** A budget service grants each gateway a share of each limit for a few seconds. Gateways
+  rate limit locally, as the `spread` layout does across shards.
+- **Only submit and final state are persisted**, in batches, to a horizontally sharded store.
 
-## 14. Proposed repo layout
+## 14. Repo layout
 
 ```
+config/          models.yaml, scenarios/scenario{1,2,3}.yaml
+docs/            ARCHITECTURE.md, BENCHMARKS.md, FINDINGS.md, results/
 python/
-  gateway/     api.py  scheduler.py  limiter.py  dispatcher.py  store.py  batches.py  callbacks.py  config.py
-  simulator/   server.py  models.py
-  loadgen/     run.py  receiver.py
-  verify/      verify.py  report.py
+  gateway/       clock, limiter, tracker, provider, scheduler, core, store, callbacks, batches, service, api
+  simulator/     config, engine, calllog, server
+  loadgen/       generator, receiver
+  verify/        data, checks, report, bench_charts
+  scenarios/     runner
   tests/
 go/
-  cmd/bench/   internal/{limiter,scheduler,sim}
-config/        models.yaml  scenario1.yaml  scenario2.yaml  scenario3.yaml
-scenarios/     scenario1.sh  scenario2.sh  scenario3.sh
-docs/          ARCHITECTURE.md  BENCHMARKS.md
+  limiter/       bucketed window + pacer
+  engine/        shards, lanes, wheel, provider, runner
+  cmd/bench/     benchmark command
 Makefile
 ```
 

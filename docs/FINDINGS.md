@@ -67,3 +67,18 @@ Machine: Apple Silicon, 12 cores, 36 GB, Python 3.14, single process each for th
 - B was unaffected: ≥ 96.0% of its limit every minute after warm-up, including while A was constrained
   (separate queue, separate limiter).
 - Accounting: 420,000 = 323,985 accepted + 96,015 rejected; accepted = 315,142 completed + 8,843 expired.
+
+## 2026-10-09: Go hot path
+- **Timing wheel delivered up to 1 ms early:** due times were rounded down to their slot. Now rounded up
+  (late by < 1 ms, never early).
+- **A weak throughput test:** it offered only 10% over the caps, and the pacer's 1 s of starting credit
+  absorbed that, so a broken limiter would have passed. It now offers 3× capacity and bounds total calls
+  between 90% of cap × duration and cap × (duration + 1 s). Making the pacer 50% too fast fails it.
+- **300k required / 1M stretch:** 302.8k/s and 1.009M/s, 3/3 runs each, 97.0% peak window, zero violations.
+  The spread layout (one model split over 12 shards) also reaches 302.8k/s against one global limit.
+- **CPU in limited runs is mostly idle churn:** the profile shows ~97% in the Go scheduler (sleep/wake),
+  with ~0.1 core per 1M req/s of real work. Not fixed. Documented in BENCHMARKS.md.
+- **Once-a-minute dip and spike:** the pacer's 1 s starting burst uses up part of the 60 s window early, and the
+  window blocks briefly about 60 s later. No violation, but not flat. Fix would be a smaller burst. Not applied.
+- **Ceiling:** 11M/s completed with limits disabled, on 2.3 cores. At 44M/s offered, memory ran out first
+  (88M in flight, swap), because ceiling mode sizes the in-flight cap from the offered load.
