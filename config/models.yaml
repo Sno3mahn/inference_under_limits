@@ -1,0 +1,20 @@
+# Provider simulator models. Every field can be changed while running:
+#   curl -X PUT localhost:9000/admin/models/model-a -d '{"rpm": 5000}'
+seed: 42
+hang_s: 30          # how long a "timeout" outcome hangs before answering
+
+models:
+  model-a:
+    rpm: 50000
+    tpm: 100000000
+    latency: { p50_ms: 150, p99_ms: 600 }       # log-normal fitted to these
+    transient: { "503": 0.02, "500": 0.005, "timeout": 0.001 }   # per attempt
+    permanent: { "400": 0.005, "413": 0.005 }   # per request id: retrying never helps
+    actual_tokens_jitter: 0.0                   # 0.1 = actual tokens within +/-10% of estimate
+
+  model-b:
+    rpm: 20000
+    tpm: 40000000
+    latency: { p50_ms: 300, p99_ms: 1200 }
+    transient: { "503": 0.02, "timeout": 0.001 }
+    permanent: { "400": 0.01 }
