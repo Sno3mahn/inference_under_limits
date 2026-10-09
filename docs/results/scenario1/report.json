@@ -1,0 +1,184 @@
+{
+  "scenario": "scenario1",
+  "passed": true,
+  "checks": [
+    {
+      "name": "limits:model-a",
+      "passed": true,
+      "detail": "341,250 counted calls; peak trailing-60s use 97.3% of RPM, 48.7% of TPM; 0 violations",
+      "data": {
+        "calls": 341250,
+        "violations": 0,
+        "max_rpm_fraction": 0.9734,
+        "max_tpm_fraction": 0.4867,
+        "peak_requests_60s": 48668,
+        "peak_tokens_60s": 48668000,
+        "provider_429s": 0,
+        "kinds": {
+          "success": 335837,
+          "permanent:400": 1690,
+          "transient:503": 3412,
+          "transient:timeout": 311,
+          "replay": 311
+        }
+      }
+    },
+    {
+      "name": "accounting",
+      "passed": true,
+      "detail": "submitted 450,000 = accepted 337,838 + rejected 112,162 (+ invalid 0, transport errors 0); snapshot_load_end: completed 287,833, waiting 50,005, expired 0, rejected 112,162, total 450,000; snapshot_drained: completed 337,838, waiting 0, expired 0, rejected 112,162, total 450,000; 337,838 request rows persisted",
+      "data": {
+        "loadgen": {
+          "submitted": 450000,
+          "accepted": 337838,
+          "rejected": 112162,
+          "invalid": 0,
+          "errors": 0
+        },
+        "gateway": {
+          "snapshot_load_end": {
+            "completed": 287833,
+            "waiting": 50005,
+            "expired": 0,
+            "rejected": 112162,
+            "total": 450000
+          },
+          "snapshot_drained": {
+            "completed": 337838,
+            "waiting": 0,
+            "expired": 0,
+            "rejected": 112162,
+            "total": 450000
+          }
+        },
+        "persisted": 337838
+      }
+    },
+    {
+      "name": "capacity:model-a",
+      "passed": true,
+      "detail": "5 full minutes after a 60s warm-up; lowest completed 95.9% of the RPM limit (need >= 90%)",
+      "data": {
+        "windows": [
+          {
+            "from_s": 60,
+            "limit": 50000,
+            "completed": 47987,
+            "sent": 48468,
+            "completed_fraction": 0.9597,
+            "sent_fraction": 0.9694
+          },
+          {
+            "from_s": 120.0,
+            "limit": 50000,
+            "completed": 47965,
+            "sent": 48453,
+            "completed_fraction": 0.9593,
+            "sent_fraction": 0.9691
+          },
+          {
+            "from_s": 180.0,
+            "limit": 50000,
+            "completed": 47955,
+            "sent": 48445,
+            "completed_fraction": 0.9591,
+            "sent_fraction": 0.9689
+          },
+          {
+            "from_s": 240.0,
+            "limit": 50000,
+            "completed": 47942,
+            "sent": 48450,
+            "completed_fraction": 0.9588,
+            "sent_fraction": 0.969
+          },
+          {
+            "from_s": 300.0,
+            "limit": 50000,
+            "completed": 48004,
+            "sent": 48457,
+            "completed_fraction": 0.9601,
+            "sent_fraction": 0.9691
+          }
+        ]
+      }
+    }
+  ],
+  "load": {
+    "spec": {
+      "rate": 1250,
+      "duration_s": 360,
+      "models": {
+        "model-a": 1
+      },
+      "batch_size": 1,
+      "tokens": 1000,
+      "token_jitter": 0.0,
+      "callback_url": null,
+      "deadline_s": null,
+      "seed": 1,
+      "max_outstanding": 4000,
+      "id_prefix": "lg"
+    },
+    "counts": {
+      "submitted": 450000,
+      "accepted": 337838,
+      "rejected": 112162,
+      "invalid": 0,
+      "errors": 0
+    },
+    "ack_ms": {
+      "p50": 0.27,
+      "p95": 3.209,
+      "p99": 56.657,
+      "max": 227.39349999756087
+    },
+    "achieved_offer_rate": 1250.0,
+    "duration_s": 360.0,
+    "max_schedule_lag_ms": 187.6
+  },
+  "completed": 337838,
+  "last_completion_s": 429.9,
+  "completion_rate_per_s": 785.8,
+  "latency_ms": {
+    "count": 337838,
+    "p50": 62657.1,
+    "p95": 63031.5,
+    "p99": 63445.7,
+    "max": 73993.8
+  },
+  "models": {
+    "model-a": {
+      "configured_initial": {
+        "rpm": 50000,
+        "tpm": 100000000
+      },
+      "limit_changes": [],
+      "observed_peak_60s": {
+        "requests": 48668,
+        "tokens": 48668000
+      },
+      "provider_calls": {
+        "success": 335837,
+        "permanent:400": 1690,
+        "transient:503": 3412,
+        "transient:timeout": 311,
+        "replay": 311
+      },
+      "latency_ms": {
+        "count": 337838,
+        "p50": 62657.1,
+        "p95": 63031.5,
+        "p99": 63445.7,
+        "max": 73993.8
+      }
+    }
+  },
+  "environment": {
+    "python": "3.13.3",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "cpus": 12,
+    "processor": "arm"
+  }
+}

@@ -1,0 +1,4516 @@
+{
+  "name": "pinned-1000000",
+  "repeats": 3,
+  "median_index": 1,
+  "completed_per_s_by_run": [
+    1009216.9,
+    1009220.3166666667,
+    1009232.8
+  ],
+  "median": {
+    "config": {
+      "target_per_s": 1000000,
+      "headroom": 1.03,
+      "offer": 1.1,
+      "ceiling": false,
+      "models": 64,
+      "layout": "pinned",
+      "shards": 12,
+      "generators": 2,
+      "duration_ns": 75000000000,
+      "warmup_ns": 15000000000,
+      "p50_ns": 150000000,
+      "p99_ns": 600000000,
+      "transient": 0.02,
+      "permanent": 0.01,
+      "tokens": 1000,
+      "token_jitter": 0.25,
+      "queue_s": 2,
+      "utilization": 0.97,
+      "burst_s": 1,
+      "max_attempts": 5,
+      "backoff_base_ns": 200000000,
+      "backoff_cap_ns": 10000000000,
+      "bucket_ns": 10000000,
+      "seed": 42
+    },
+    "limits": {
+      "lanes": 64,
+      "lane_cap_per_min": 965626,
+      "total_cap_per_s": 1030001.0666666667,
+      "models": [
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        },
+        {
+          "rpm": 995491,
+          "tpm": 1990982000
+        }
+      ],
+      "offered_per_s": 1100000
+    },
+    "environment": {
+      "arch": "arm64",
+      "cpus": 12,
+      "go": "go1.24.3",
+      "gomaxprocs": 12,
+      "os": "darwin"
+    },
+    "generated": 82499819,
+    "inbox_dropped": 0,
+    "accepted": 78766439,
+    "rejected": 3733380,
+    "provider_calls": 78269215,
+    "retries": 1563550,
+    "succeeded": 75740766,
+    "failed": 779945,
+    "never_fits": 0,
+    "pending_at_stop": {
+      "in_flight": 184954,
+      "queued": 2058673,
+      "retry_wait": 2101
+    },
+    "accounting_ok": true,
+    "completed_per_s": 1009220.3166666667,
+    "offered_per_s_achieved": 1099998.6166666667,
+    "completed_per_second": [
+      893710,
+      1099856,
+      1099481,
+      1099945,
+      1100328,
+      1099899,
+      1100005,
+      1099300,
+      1101387,
+      1099475,
+      1098316,
+      1045617,
+      1009473,
+      1009475,
+      1009219,
+      1009138,
+      1009659,
+      1009063,
+      1009673,
+      1009164,
+      1009215,
+      1009536,
+      1009484,
+      1009344,
+      1009912,
+      1009157,
+      1009195,
+      1009506,
+      1009748,
+      1009169,
+      1008712,
+      1009423,
+      1008963,
+      1009333,
+      1010141,
+      1009068,
+      1009468,
+      1008973,
+      1009673,
+      1009346,
+      1009537,
+      1009793,
+      1008722,
+      1009322,
+      1009457,
+      1008850,
+      1009709,
+      1009440,
+      1009023,
+      1009244,
+      1009850,
+      1009434,
+      1009419,
+      1009351,
+      1009568,
+      1008960,
+      1008959,
+      1009510,
+      1009777,
+      184221,
+      887900,
+      1100010,
+      1099202,
+      1100014,
+      1100151,
+      1100075,
+      1099881,
+      1100623,
+      1099333,
+      1100690,
+      1097176,
+      1042798,
+      1010354,
+      1009444,
+      1009359,
+      2006
+    ],
+    "generated_per_second": [
+      1098838,
+      1100082,
+      1099699,
+      1099837,
+      1100426,
+      1099694,
+      1100365,
+      1099561,
+      1100307,
+      1100063,
+      1099799,
+      1099907,
+      1100168,
+      1099961,
+      1100070,
+      1099866,
+      1099899,
+      1100161,
+      1100015,
+      1100012,
+      1099832,
+      1100170,
+      1100094,
+      1099904,
+      1100064,
+      1099726,
+      1100377,
+      1099827,
+      1099972,
+      1100194,
+      1099874,
+      1099932,
+      1099800,
+      1100192,
+      1100079,
+      1099681,
+      1100092,
+      1100158,
+      1099955,
+      1099933,
+      1100206,
+      1100128,
+      1099931,
+      1099744,
+      1099977,
+      1100101,
+      1099919,
+      1100176,
+      1099783,
+      1100018,
+      1100317,
+      1099727,
+      1099997,
+      1100146,
+      1099734,
+      1100212,
+      1099990,
+      1099808,
+      1100240,
+      1099923,
+      1099950,
+      1100056,
+      1100078,
+      1099923,
+      1100057,
+      1099914,
+      1100088,
+      1099878,
+      1100051,
+      1100230,
+      1099851,
+      1100148,
+      1099817,
+      1099934,
+      1100056,
+      1125
+    ],
+    "latency_ms": {
+      "p50": 1962.934272,
+      "p95": 2415.919104,
+      "p99": 3154.116608,
+      "p999": 3422.552064
+    },
+    "provider_check": [
+      {
+        "model": 0,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222961,
+        "peak_requests_60s": 965655,
+        "peak_tokens_60s": 965802408,
+        "peak_rpm_fraction": 0.9700288601303276,
+        "violating_windows": 0
+      },
+      {
+        "model": 1,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222968,
+        "peak_requests_60s": 965660,
+        "peak_tokens_60s": 965862531,
+        "peak_rpm_fraction": 0.9700338827774435,
+        "violating_windows": 0
+      },
+      {
+        "model": 2,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222959,
+        "peak_requests_60s": 965663,
+        "peak_tokens_60s": 965638287,
+        "peak_rpm_fraction": 0.970036896365713,
+        "violating_windows": 0
+      },
+      {
+        "model": 3,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222964,
+        "peak_requests_60s": 965682,
+        "peak_tokens_60s": 965614400,
+        "peak_rpm_fraction": 0.9700559824247532,
+        "violating_windows": 0
+      },
+      {
+        "model": 4,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222948,
+        "peak_requests_60s": 965762,
+        "peak_tokens_60s": 965770258,
+        "peak_rpm_fraction": 0.9701363447786068,
+        "violating_windows": 0
+      },
+      {
+        "model": 5,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222941,
+        "peak_requests_60s": 965649,
+        "peak_tokens_60s": 965597877,
+        "peak_rpm_fraction": 0.9700228329537887,
+        "violating_windows": 0
+      },
+      {
+        "model": 6,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222934,
+        "peak_requests_60s": 965654,
+        "peak_tokens_60s": 965482403,
+        "peak_rpm_fraction": 0.9700278556009044,
+        "violating_windows": 0
+      },
+      {
+        "model": 7,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222936,
+        "peak_requests_60s": 965650,
+        "peak_tokens_60s": 965909063,
+        "peak_rpm_fraction": 0.9700238374832117,
+        "violating_windows": 0
+      },
+      {
+        "model": 8,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222958,
+        "peak_requests_60s": 965651,
+        "peak_tokens_60s": 965711788,
+        "peak_rpm_fraction": 0.970024842012635,
+        "violating_windows": 0
+      },
+      {
+        "model": 9,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222946,
+        "peak_requests_60s": 965654,
+        "peak_tokens_60s": 965675048,
+        "peak_rpm_fraction": 0.9700278556009044,
+        "violating_windows": 0
+      },
+      {
+        "model": 10,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222968,
+        "peak_requests_60s": 965650,
+        "peak_tokens_60s": 965603453,
+        "peak_rpm_fraction": 0.9700238374832117,
+        "violating_windows": 0
+      },
+      {
+        "model": 11,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222978,
+        "peak_requests_60s": 965652,
+        "peak_tokens_60s": 965638861,
+        "peak_rpm_fraction": 0.9700258465420581,
+        "violating_windows": 0
+      },
+      {
+        "model": 12,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222941,
+        "peak_requests_60s": 965652,
+        "peak_tokens_60s": 965692287,
+        "peak_rpm_fraction": 0.9700258465420581,
+        "violating_windows": 0
+      },
+      {
+        "model": 13,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222951,
+        "peak_requests_60s": 965654,
+        "peak_tokens_60s": 965813886,
+        "peak_rpm_fraction": 0.9700278556009044,
+        "violating_windows": 0
+      },
+      {
+        "model": 14,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222943,
+        "peak_requests_60s": 965666,
+        "peak_tokens_60s": 965638632,
+        "peak_rpm_fraction": 0.9700399099539825,
+        "violating_windows": 0
+      },
+      {
+        "model": 15,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222963,
+        "peak_requests_60s": 965678,
+        "peak_tokens_60s": 965467176,
+        "peak_rpm_fraction": 0.9700519643070605,
+        "violating_windows": 0
+      },
+      {
+        "model": 16,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222952,
+        "peak_requests_60s": 965730,
+        "peak_tokens_60s": 965923562,
+        "peak_rpm_fraction": 0.9701041998370653,
+        "violating_windows": 0
+      },
+      {
+        "model": 17,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222962,
+        "peak_requests_60s": 965659,
+        "peak_tokens_60s": 965825936,
+        "peak_rpm_fraction": 0.9700328782480203,
+        "violating_windows": 0
+      },
+      {
+        "model": 18,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222916,
+        "peak_requests_60s": 965653,
+        "peak_tokens_60s": 965896700,
+        "peak_rpm_fraction": 0.9700268510714813,
+        "violating_windows": 0
+      },
+      {
+        "model": 19,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222980,
+        "peak_requests_60s": 965663,
+        "peak_tokens_60s": 965774313,
+        "peak_rpm_fraction": 0.970036896365713,
+        "violating_windows": 0
+      },
+      {
+        "model": 20,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222976,
+        "peak_requests_60s": 965664,
+        "peak_tokens_60s": 965659931,
+        "peak_rpm_fraction": 0.9700379008951362,
+        "violating_windows": 0
+      },
+      {
+        "model": 21,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222967,
+        "peak_requests_60s": 965657,
+        "peak_tokens_60s": 965874841,
+        "peak_rpm_fraction": 0.970030869189174,
+        "violating_windows": 0
+      },
+      {
+        "model": 22,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222946,
+        "peak_requests_60s": 965659,
+        "peak_tokens_60s": 965678768,
+        "peak_rpm_fraction": 0.9700328782480203,
+        "violating_windows": 0
+      },
+      {
+        "model": 23,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222978,
+        "peak_requests_60s": 965657,
+        "peak_tokens_60s": 965738777,
+        "peak_rpm_fraction": 0.970030869189174,
+        "violating_windows": 0
+      },
+      {
+        "model": 24,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222965,
+        "peak_requests_60s": 965659,
+        "peak_tokens_60s": 965710649,
+        "peak_rpm_fraction": 0.9700328782480203,
+        "violating_windows": 0
+      },
+      {
+        "model": 25,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222942,
+        "peak_requests_60s": 965655,
+        "peak_tokens_60s": 965776166,
+        "peak_rpm_fraction": 0.9700288601303276,
+        "violating_windows": 0
+      },
+      {
+        "model": 26,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222976,
+        "peak_requests_60s": 965656,
+        "peak_tokens_60s": 965686188,
+        "peak_rpm_fraction": 0.9700298646597508,
+        "violating_windows": 0
+      },
+      {
+        "model": 27,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222974,
+        "peak_requests_60s": 965691,
+        "peak_tokens_60s": 966084255,
+        "peak_rpm_fraction": 0.9700650231895618,
+        "violating_windows": 0
+      },
+      {
+        "model": 28,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222970,
+        "peak_requests_60s": 965742,
+        "peak_tokens_60s": 965641312,
+        "peak_rpm_fraction": 0.9701162541901434,
+        "violating_windows": 0
+      },
+      {
+        "model": 29,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222966,
+        "peak_requests_60s": 965656,
+        "peak_tokens_60s": 965449255,
+        "peak_rpm_fraction": 0.9700298646597508,
+        "violating_windows": 0
+      },
+      {
+        "model": 30,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222947,
+        "peak_requests_60s": 965659,
+        "peak_tokens_60s": 965762312,
+        "peak_rpm_fraction": 0.9700328782480203,
+        "violating_windows": 0
+      },
+      {
+        "model": 31,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222924,
+        "peak_requests_60s": 965658,
+        "peak_tokens_60s": 965785045,
+        "peak_rpm_fraction": 0.9700318737185971,
+        "violating_windows": 0
+      },
+      {
+        "model": 32,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222956,
+        "peak_requests_60s": 965669,
+        "peak_tokens_60s": 965643938,
+        "peak_rpm_fraction": 0.970042923542252,
+        "violating_windows": 0
+      },
+      {
+        "model": 33,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222979,
+        "peak_requests_60s": 965654,
+        "peak_tokens_60s": 965743282,
+        "peak_rpm_fraction": 0.9700278556009044,
+        "violating_windows": 0
+      },
+      {
+        "model": 34,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222957,
+        "peak_requests_60s": 965659,
+        "peak_tokens_60s": 965648293,
+        "peak_rpm_fraction": 0.9700328782480203,
+        "violating_windows": 0
+      },
+      {
+        "model": 35,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222960,
+        "peak_requests_60s": 965665,
+        "peak_tokens_60s": 965716926,
+        "peak_rpm_fraction": 0.9700389054245593,
+        "violating_windows": 0
+      },
+      {
+        "model": 36,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222937,
+        "peak_requests_60s": 965669,
+        "peak_tokens_60s": 965677665,
+        "peak_rpm_fraction": 0.970042923542252,
+        "violating_windows": 0
+      },
+      {
+        "model": 37,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222950,
+        "peak_requests_60s": 965655,
+        "peak_tokens_60s": 965746119,
+        "peak_rpm_fraction": 0.9700288601303276,
+        "violating_windows": 0
+      },
+      {
+        "model": 38,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222950,
+        "peak_requests_60s": 965657,
+        "peak_tokens_60s": 965769555,
+        "peak_rpm_fraction": 0.970030869189174,
+        "violating_windows": 0
+      },
+      {
+        "model": 39,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222962,
+        "peak_requests_60s": 965687,
+        "peak_tokens_60s": 965894338,
+        "peak_rpm_fraction": 0.9700610050718691,
+        "violating_windows": 0
+      },
+      {
+        "model": 40,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222970,
+        "peak_requests_60s": 965754,
+        "peak_tokens_60s": 965801840,
+        "peak_rpm_fraction": 0.9701283085432214,
+        "violating_windows": 0
+      },
+      {
+        "model": 41,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222938,
+        "peak_requests_60s": 965656,
+        "peak_tokens_60s": 965639955,
+        "peak_rpm_fraction": 0.9700298646597508,
+        "violating_windows": 0
+      },
+      {
+        "model": 42,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222954,
+        "peak_requests_60s": 965659,
+        "peak_tokens_60s": 965804457,
+        "peak_rpm_fraction": 0.9700328782480203,
+        "violating_windows": 0
+      },
+      {
+        "model": 43,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222955,
+        "peak_requests_60s": 965661,
+        "peak_tokens_60s": 965660150,
+        "peak_rpm_fraction": 0.9700348873068667,
+        "violating_windows": 0
+      },
+      {
+        "model": 44,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222965,
+        "peak_requests_60s": 965675,
+        "peak_tokens_60s": 965800512,
+        "peak_rpm_fraction": 0.970048950718791,
+        "violating_windows": 0
+      },
+      {
+        "model": 45,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222920,
+        "peak_requests_60s": 965656,
+        "peak_tokens_60s": 965933403,
+        "peak_rpm_fraction": 0.9700298646597508,
+        "violating_windows": 0
+      },
+      {
+        "model": 46,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222956,
+        "peak_requests_60s": 965654,
+        "peak_tokens_60s": 965918766,
+        "peak_rpm_fraction": 0.9700278556009044,
+        "violating_windows": 0
+      },
+      {
+        "model": 47,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222944,
+        "peak_requests_60s": 965660,
+        "peak_tokens_60s": 965638273,
+        "peak_rpm_fraction": 0.9700338827774435,
+        "violating_windows": 0
+      },
+      {
+        "model": 48,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222975,
+        "peak_requests_60s": 965684,
+        "peak_tokens_60s": 965739434,
+        "peak_rpm_fraction": 0.9700579914835995,
+        "violating_windows": 0
+      },
+      {
+        "model": 49,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222937,
+        "peak_requests_60s": 965655,
+        "peak_tokens_60s": 965650380,
+        "peak_rpm_fraction": 0.9700288601303276,
+        "violating_windows": 0
+      },
+      {
+        "model": 50,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222972,
+        "peak_requests_60s": 965656,
+        "peak_tokens_60s": 965643226,
+        "peak_rpm_fraction": 0.9700298646597508,
+        "violating_windows": 0
+      },
+      {
+        "model": 51,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222946,
+        "peak_requests_60s": 965695,
+        "peak_tokens_60s": 965689052,
+        "peak_rpm_fraction": 0.9700690413072545,
+        "violating_windows": 0
+      },
+      {
+        "model": 52,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222970,
+        "peak_requests_60s": 965739,
+        "peak_tokens_60s": 965930214,
+        "peak_rpm_fraction": 0.9701132406018739,
+        "violating_windows": 0
+      },
+      {
+        "model": 53,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222961,
+        "peak_requests_60s": 965656,
+        "peak_tokens_60s": 965599136,
+        "peak_rpm_fraction": 0.9700298646597508,
+        "violating_windows": 0
+      },
+      {
+        "model": 54,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222945,
+        "peak_requests_60s": 965660,
+        "peak_tokens_60s": 965706998,
+        "peak_rpm_fraction": 0.9700338827774435,
+        "violating_windows": 0
+      },
+      {
+        "model": 55,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222919,
+        "peak_requests_60s": 965662,
+        "peak_tokens_60s": 965800945,
+        "peak_rpm_fraction": 0.9700358918362898,
+        "violating_windows": 0
+      },
+      {
+        "model": 56,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222953,
+        "peak_requests_60s": 965676,
+        "peak_tokens_60s": 965630952,
+        "peak_rpm_fraction": 0.9700499552482142,
+        "violating_windows": 0
+      },
+      {
+        "model": 57,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222977,
+        "peak_requests_60s": 965661,
+        "peak_tokens_60s": 965885727,
+        "peak_rpm_fraction": 0.9700348873068667,
+        "violating_windows": 0
+      },
+      {
+        "model": 58,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222967,
+        "peak_requests_60s": 965678,
+        "peak_tokens_60s": 965549916,
+        "peak_rpm_fraction": 0.9700519643070605,
+        "violating_windows": 0
+      },
+      {
+        "model": 59,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222973,
+        "peak_requests_60s": 965662,
+        "peak_tokens_60s": 965665336,
+        "peak_rpm_fraction": 0.9700358918362898,
+        "violating_windows": 0
+      },
+      {
+        "model": 60,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222976,
+        "peak_requests_60s": 965668,
+        "peak_tokens_60s": 965870748,
+        "peak_rpm_fraction": 0.9700419190128289,
+        "violating_windows": 0
+      },
+      {
+        "model": 61,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222970,
+        "peak_requests_60s": 965660,
+        "peak_tokens_60s": 965906524,
+        "peak_rpm_fraction": 0.9700338827774435,
+        "violating_windows": 0
+      },
+      {
+        "model": 62,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222949,
+        "peak_requests_60s": 965666,
+        "peak_tokens_60s": 965697825,
+        "peak_rpm_fraction": 0.9700399099539825,
+        "violating_windows": 0
+      },
+      {
+        "model": 63,
+        "rpm": 995491,
+        "tpm": 1990982000,
+        "calls": 1222972,
+        "peak_requests_60s": 965689,
+        "peak_tokens_60s": 965739239,
+        "peak_rpm_fraction": 0.9700630141307154,
+        "violating_windows": 0
+      }
+    ],
+    "provider_passed": true,
+    "max_peak_rpm_fraction": 0.9701363447786068,
+    "cpu_seconds": 376.907517,
+    "cores_used": 5.025335761337708,
+    "gc_count": 25,
+    "gc_pause_total_ms": 2.54892
+  },
+  "runs": [
+    {
+      "config": {
+        "target_per_s": 1000000,
+        "headroom": 1.03,
+        "offer": 1.1,
+        "ceiling": false,
+        "models": 64,
+        "layout": "pinned",
+        "shards": 12,
+        "generators": 2,
+        "duration_ns": 75000000000,
+        "warmup_ns": 15000000000,
+        "p50_ns": 150000000,
+        "p99_ns": 600000000,
+        "transient": 0.02,
+        "permanent": 0.01,
+        "tokens": 1000,
+        "token_jitter": 0.25,
+        "queue_s": 2,
+        "utilization": 0.97,
+        "burst_s": 1,
+        "max_attempts": 5,
+        "backoff_base_ns": 200000000,
+        "backoff_cap_ns": 10000000000,
+        "bucket_ns": 10000000,
+        "seed": 42
+      },
+      "limits": {
+        "lanes": 64,
+        "lane_cap_per_min": 965626,
+        "total_cap_per_s": 1030001.0666666667,
+        "models": [
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          }
+        ],
+        "offered_per_s": 1100000
+      },
+      "environment": {
+        "arch": "arm64",
+        "cpus": 12,
+        "go": "go1.24.3",
+        "gomaxprocs": 12,
+        "os": "darwin"
+      },
+      "generated": 82499778,
+      "inbox_dropped": 0,
+      "accepted": 78766219,
+      "rejected": 3733559,
+      "provider_calls": 78269757,
+      "retries": 1563874,
+      "succeeded": 75740853,
+      "failed": 780238,
+      "never_fits": 0,
+      "pending_at_stop": {
+        "in_flight": 184792,
+        "queued": 2058185,
+        "retry_wait": 2151
+      },
+      "accounting_ok": true,
+      "completed_per_s": 1009216.9,
+      "offered_per_s_achieved": 1100004.6,
+      "completed_per_second": [
+        893520,
+        1098956,
+        1100463,
+        1100224,
+        1099931,
+        1100179,
+        1099896,
+        1099997,
+        1100545,
+        1099688,
+        1098365,
+        1045313,
+        1009776,
+        1009633,
+        1009573,
+        1008751,
+        1009982,
+        1009447,
+        1009265,
+        1009122,
+        1009257,
+        1009595,
+        1009001,
+        1009627,
+        1009978,
+        1008862,
+        1009258,
+        1009767,
+        1009623,
+        1009014,
+        1008757,
+        1009510,
+        1008627,
+        1009490,
+        1009800,
+        1008965,
+        1009481,
+        1009331,
+        1009430,
+        1009240,
+        1010055,
+        1009774,
+        1008462,
+        1009028,
+        1010092,
+        1008844,
+        1009629,
+        1009633,
+        1008936,
+        1009344,
+        1009525,
+        1009748,
+        1008960,
+        1009260,
+        1009807,
+        1009203,
+        1009070,
+        1009464,
+        1009449,
+        184581,
+        887688,
+        1099253,
+        1100224,
+        1100109,
+        1100378,
+        1099762,
+        1099412,
+        1100671,
+        1099486,
+        1100582,
+        1097221,
+        1043217,
+        1010464,
+        1009141,
+        1009362,
+        2018
+      ],
+      "generated_per_second": [
+        1098722,
+        1100156,
+        1099397,
+        1100462,
+        1099848,
+        1100253,
+        1099796,
+        1099845,
+        1100350,
+        1100043,
+        1099674,
+        1100038,
+        1099927,
+        1099843,
+        1100022,
+        1100121,
+        1100039,
+        1100066,
+        1099948,
+        1100238,
+        1099959,
+        1099774,
+        1100160,
+        1099777,
+        1100153,
+        1100010,
+        1099991,
+        1100114,
+        1099783,
+        1100110,
+        1099951,
+        1100118,
+        1099852,
+        1100287,
+        1099933,
+        1099725,
+        1100281,
+        1099697,
+        1100267,
+        1099812,
+        1100212,
+        1099716,
+        1100373,
+        1099722,
+        1100049,
+        1099995,
+        1099811,
+        1100248,
+        1099890,
+        1100288,
+        1099840,
+        1099828,
+        1099969,
+        1100232,
+        1099686,
+        1100098,
+        1100076,
+        1100132,
+        1099864,
+        1100158,
+        1099717,
+        1100143,
+        1100175,
+        1099694,
+        1100311,
+        1099809,
+        1100121,
+        1099982,
+        1099958,
+        1100160,
+        1099799,
+        1100010,
+        1099840,
+        1100247,
+        1099957,
+        1126
+      ],
+      "latency_ms": {
+        "p50": 1962.934272,
+        "p95": 2415.919104,
+        "p99": 3154.116608,
+        "p999": 3422.552064
+      },
+      "provider_check": [
+        {
+          "model": 0,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222971,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965746140,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 1,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965732,
+          "peak_tokens_60s": 965996238,
+          "peak_rpm_fraction": 0.9701062088959117,
+          "violating_windows": 0
+        },
+        {
+          "model": 2,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222957,
+          "peak_requests_60s": 965651,
+          "peak_tokens_60s": 965628511,
+          "peak_rpm_fraction": 0.970024842012635,
+          "violating_windows": 0
+        },
+        {
+          "model": 3,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222970,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965621850,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 4,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222963,
+          "peak_requests_60s": 966048,
+          "peak_tokens_60s": 966060760,
+          "peak_rpm_fraction": 0.9704236401936331,
+          "violating_windows": 0
+        },
+        {
+          "model": 5,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222947,
+          "peak_requests_60s": 965648,
+          "peak_tokens_60s": 965588624,
+          "peak_rpm_fraction": 0.9700218284243655,
+          "violating_windows": 0
+        },
+        {
+          "model": 6,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222954,
+          "peak_requests_60s": 965649,
+          "peak_tokens_60s": 965433807,
+          "peak_rpm_fraction": 0.9700228329537887,
+          "violating_windows": 0
+        },
+        {
+          "model": 7,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222956,
+          "peak_requests_60s": 965647,
+          "peak_tokens_60s": 965920393,
+          "peak_rpm_fraction": 0.9700208238949423,
+          "violating_windows": 0
+        },
+        {
+          "model": 8,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965652,
+          "peak_tokens_60s": 965739047,
+          "peak_rpm_fraction": 0.9700258465420581,
+          "violating_windows": 0
+        },
+        {
+          "model": 9,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965669,
+          "peak_tokens_60s": 965685948,
+          "peak_rpm_fraction": 0.970042923542252,
+          "violating_windows": 0
+        },
+        {
+          "model": 10,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965652,
+          "peak_tokens_60s": 965602293,
+          "peak_rpm_fraction": 0.9700258465420581,
+          "violating_windows": 0
+        },
+        {
+          "model": 11,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222985,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965624129,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 12,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965747,
+          "peak_tokens_60s": 965631199,
+          "peak_rpm_fraction": 0.9701212768372592,
+          "violating_windows": 0
+        },
+        {
+          "model": 13,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965772,
+          "peak_tokens_60s": 965895712,
+          "peak_rpm_fraction": 0.9701463900728384,
+          "violating_windows": 0
+        },
+        {
+          "model": 14,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222955,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965585897,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 15,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222970,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965486353,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 16,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 966013,
+          "peak_tokens_60s": 966168155,
+          "peak_rpm_fraction": 0.9703884816638222,
+          "violating_windows": 0
+        },
+        {
+          "model": 17,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222975,
+          "peak_requests_60s": 965689,
+          "peak_tokens_60s": 965880558,
+          "peak_rpm_fraction": 0.9700630141307154,
+          "violating_windows": 0
+        },
+        {
+          "model": 18,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222900,
+          "peak_requests_60s": 965651,
+          "peak_tokens_60s": 965853867,
+          "peak_rpm_fraction": 0.970024842012635,
+          "violating_windows": 0
+        },
+        {
+          "model": 19,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222985,
+          "peak_requests_60s": 965680,
+          "peak_tokens_60s": 965759182,
+          "peak_rpm_fraction": 0.9700539733659068,
+          "violating_windows": 0
+        },
+        {
+          "model": 20,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222980,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965708085,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 21,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965664,
+          "peak_tokens_60s": 965941634,
+          "peak_rpm_fraction": 0.9700379008951362,
+          "violating_windows": 0
+        },
+        {
+          "model": 22,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222942,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965747589,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 23,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222985,
+          "peak_requests_60s": 965712,
+          "peak_tokens_60s": 965709926,
+          "peak_rpm_fraction": 0.9700861183074483,
+          "violating_windows": 0
+        },
+        {
+          "model": 24,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222971,
+          "peak_requests_60s": 965777,
+          "peak_tokens_60s": 965770171,
+          "peak_rpm_fraction": 0.9701514127199543,
+          "violating_windows": 0
+        },
+        {
+          "model": 25,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222939,
+          "peak_requests_60s": 965863,
+          "peak_tokens_60s": 965864261,
+          "peak_rpm_fraction": 0.9702378022503468,
+          "violating_windows": 0
+        },
+        {
+          "model": 26,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965698154,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 27,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 966042084,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 28,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222975,
+          "peak_requests_60s": 966020,
+          "peak_tokens_60s": 965906912,
+          "peak_rpm_fraction": 0.9703955133697844,
+          "violating_windows": 0
+        },
+        {
+          "model": 29,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222970,
+          "peak_requests_60s": 965703,
+          "peak_tokens_60s": 965476102,
+          "peak_rpm_fraction": 0.9700770775426397,
+          "violating_windows": 0
+        },
+        {
+          "model": 30,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222961,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965791067,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 31,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222934,
+          "peak_requests_60s": 965679,
+          "peak_tokens_60s": 965797230,
+          "peak_rpm_fraction": 0.9700529688364837,
+          "violating_windows": 0
+        },
+        {
+          "model": 32,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965729929,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 33,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965672,
+          "peak_tokens_60s": 965721496,
+          "peak_rpm_fraction": 0.9700459371305216,
+          "violating_windows": 0
+        },
+        {
+          "model": 34,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222969,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965698980,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 35,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 965705,
+          "peak_tokens_60s": 965729416,
+          "peak_rpm_fraction": 0.9700790866014861,
+          "violating_windows": 0
+        },
+        {
+          "model": 36,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222945,
+          "peak_requests_60s": 965774,
+          "peak_tokens_60s": 965690074,
+          "peak_rpm_fraction": 0.9701483991316847,
+          "violating_windows": 0
+        },
+        {
+          "model": 37,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222961,
+          "peak_requests_60s": 965926,
+          "peak_tokens_60s": 965936175,
+          "peak_rpm_fraction": 0.9703010876040065,
+          "violating_windows": 0
+        },
+        {
+          "model": 38,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222963,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965813123,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 39,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222969,
+          "peak_requests_60s": 965653,
+          "peak_tokens_60s": 965835739,
+          "peak_rpm_fraction": 0.9700268510714813,
+          "violating_windows": 0
+        },
+        {
+          "model": 40,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222975,
+          "peak_requests_60s": 966042,
+          "peak_tokens_60s": 966071557,
+          "peak_rpm_fraction": 0.9704176130170941,
+          "violating_windows": 0
+        },
+        {
+          "model": 41,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222952,
+          "peak_requests_60s": 965703,
+          "peak_tokens_60s": 965703002,
+          "peak_rpm_fraction": 0.9700770775426397,
+          "violating_windows": 0
+        },
+        {
+          "model": 42,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222977,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965832172,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 43,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 965687,
+          "peak_tokens_60s": 965652383,
+          "peak_rpm_fraction": 0.9700610050718691,
+          "violating_windows": 0
+        },
+        {
+          "model": 44,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965658,
+          "peak_tokens_60s": 965782542,
+          "peak_rpm_fraction": 0.9700318737185971,
+          "violating_windows": 0
+        },
+        {
+          "model": 45,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222928,
+          "peak_requests_60s": 965671,
+          "peak_tokens_60s": 965955126,
+          "peak_rpm_fraction": 0.9700449326010984,
+          "violating_windows": 0
+        },
+        {
+          "model": 46,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222963,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965946486,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 47,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222952,
+          "peak_requests_60s": 965699,
+          "peak_tokens_60s": 965607566,
+          "peak_rpm_fraction": 0.970073059424947,
+          "violating_windows": 0
+        },
+        {
+          "model": 48,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222985,
+          "peak_requests_60s": 965756,
+          "peak_tokens_60s": 965728319,
+          "peak_rpm_fraction": 0.9701303176020677,
+          "violating_windows": 0
+        },
+        {
+          "model": 49,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965963,
+          "peak_tokens_60s": 965776772,
+          "peak_rpm_fraction": 0.9703382551926637,
+          "violating_windows": 0
+        },
+        {
+          "model": 50,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965823,
+          "peak_tokens_60s": 965755815,
+          "peak_rpm_fraction": 0.97019762107342,
+          "violating_windows": 0
+        },
+        {
+          "model": 51,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222952,
+          "peak_requests_60s": 965912,
+          "peak_tokens_60s": 965957609,
+          "peak_rpm_fraction": 0.9702870241920821,
+          "violating_windows": 0
+        },
+        {
+          "model": 52,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222978,
+          "peak_requests_60s": 966021,
+          "peak_tokens_60s": 966051826,
+          "peak_rpm_fraction": 0.9703965178992076,
+          "violating_windows": 0
+        },
+        {
+          "model": 53,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222969,
+          "peak_requests_60s": 965713,
+          "peak_tokens_60s": 965608779,
+          "peak_rpm_fraction": 0.9700871228368715,
+          "violating_windows": 0
+        },
+        {
+          "model": 54,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222949,
+          "peak_requests_60s": 965658,
+          "peak_tokens_60s": 965671838,
+          "peak_rpm_fraction": 0.9700318737185971,
+          "violating_windows": 0
+        },
+        {
+          "model": 55,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222939,
+          "peak_requests_60s": 965682,
+          "peak_tokens_60s": 965831742,
+          "peak_rpm_fraction": 0.9700559824247532,
+          "violating_windows": 0
+        },
+        {
+          "model": 56,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965666,
+          "peak_tokens_60s": 965630980,
+          "peak_rpm_fraction": 0.9700399099539825,
+          "violating_windows": 0
+        },
+        {
+          "model": 57,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965857793,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 58,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965688,
+          "peak_tokens_60s": 965602001,
+          "peak_rpm_fraction": 0.9700620096012922,
+          "violating_windows": 0
+        },
+        {
+          "model": 59,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222985,
+          "peak_requests_60s": 965714,
+          "peak_tokens_60s": 965695124,
+          "peak_rpm_fraction": 0.9700881273662946,
+          "violating_windows": 0
+        },
+        {
+          "model": 60,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222982,
+          "peak_requests_60s": 965766,
+          "peak_tokens_60s": 965978476,
+          "peak_rpm_fraction": 0.9701403628962995,
+          "violating_windows": 0
+        },
+        {
+          "model": 61,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965943,
+          "peak_tokens_60s": 966038817,
+          "peak_rpm_fraction": 0.9703181646042003,
+          "violating_windows": 0
+        },
+        {
+          "model": 62,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222958,
+          "peak_requests_60s": 965859,
+          "peak_tokens_60s": 965826531,
+          "peak_rpm_fraction": 0.9702337841326542,
+          "violating_windows": 0
+        },
+        {
+          "model": 63,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222977,
+          "peak_requests_60s": 965962,
+          "peak_tokens_60s": 965948431,
+          "peak_rpm_fraction": 0.9703372506632405,
+          "violating_windows": 0
+        }
+      ],
+      "provider_passed": true,
+      "max_peak_rpm_fraction": 0.9704236401936331,
+      "cpu_seconds": 322.159282,
+      "cores_used": 4.295373252400993,
+      "gc_count": 25,
+      "gc_pause_total_ms": 2.57587
+    },
+    {
+      "config": {
+        "target_per_s": 1000000,
+        "headroom": 1.03,
+        "offer": 1.1,
+        "ceiling": false,
+        "models": 64,
+        "layout": "pinned",
+        "shards": 12,
+        "generators": 2,
+        "duration_ns": 75000000000,
+        "warmup_ns": 15000000000,
+        "p50_ns": 150000000,
+        "p99_ns": 600000000,
+        "transient": 0.02,
+        "permanent": 0.01,
+        "tokens": 1000,
+        "token_jitter": 0.25,
+        "queue_s": 2,
+        "utilization": 0.97,
+        "burst_s": 1,
+        "max_attempts": 5,
+        "backoff_base_ns": 200000000,
+        "backoff_cap_ns": 10000000000,
+        "bucket_ns": 10000000,
+        "seed": 42
+      },
+      "limits": {
+        "lanes": 64,
+        "lane_cap_per_min": 965626,
+        "total_cap_per_s": 1030001.0666666667,
+        "models": [
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          }
+        ],
+        "offered_per_s": 1100000
+      },
+      "environment": {
+        "arch": "arm64",
+        "cpus": 12,
+        "go": "go1.24.3",
+        "gomaxprocs": 12,
+        "os": "darwin"
+      },
+      "generated": 82499819,
+      "inbox_dropped": 0,
+      "accepted": 78766439,
+      "rejected": 3733380,
+      "provider_calls": 78269215,
+      "retries": 1563550,
+      "succeeded": 75740766,
+      "failed": 779945,
+      "never_fits": 0,
+      "pending_at_stop": {
+        "in_flight": 184954,
+        "queued": 2058673,
+        "retry_wait": 2101
+      },
+      "accounting_ok": true,
+      "completed_per_s": 1009220.3166666667,
+      "offered_per_s_achieved": 1099998.6166666667,
+      "completed_per_second": [
+        893710,
+        1099856,
+        1099481,
+        1099945,
+        1100328,
+        1099899,
+        1100005,
+        1099300,
+        1101387,
+        1099475,
+        1098316,
+        1045617,
+        1009473,
+        1009475,
+        1009219,
+        1009138,
+        1009659,
+        1009063,
+        1009673,
+        1009164,
+        1009215,
+        1009536,
+        1009484,
+        1009344,
+        1009912,
+        1009157,
+        1009195,
+        1009506,
+        1009748,
+        1009169,
+        1008712,
+        1009423,
+        1008963,
+        1009333,
+        1010141,
+        1009068,
+        1009468,
+        1008973,
+        1009673,
+        1009346,
+        1009537,
+        1009793,
+        1008722,
+        1009322,
+        1009457,
+        1008850,
+        1009709,
+        1009440,
+        1009023,
+        1009244,
+        1009850,
+        1009434,
+        1009419,
+        1009351,
+        1009568,
+        1008960,
+        1008959,
+        1009510,
+        1009777,
+        184221,
+        887900,
+        1100010,
+        1099202,
+        1100014,
+        1100151,
+        1100075,
+        1099881,
+        1100623,
+        1099333,
+        1100690,
+        1097176,
+        1042798,
+        1010354,
+        1009444,
+        1009359,
+        2006
+      ],
+      "generated_per_second": [
+        1098838,
+        1100082,
+        1099699,
+        1099837,
+        1100426,
+        1099694,
+        1100365,
+        1099561,
+        1100307,
+        1100063,
+        1099799,
+        1099907,
+        1100168,
+        1099961,
+        1100070,
+        1099866,
+        1099899,
+        1100161,
+        1100015,
+        1100012,
+        1099832,
+        1100170,
+        1100094,
+        1099904,
+        1100064,
+        1099726,
+        1100377,
+        1099827,
+        1099972,
+        1100194,
+        1099874,
+        1099932,
+        1099800,
+        1100192,
+        1100079,
+        1099681,
+        1100092,
+        1100158,
+        1099955,
+        1099933,
+        1100206,
+        1100128,
+        1099931,
+        1099744,
+        1099977,
+        1100101,
+        1099919,
+        1100176,
+        1099783,
+        1100018,
+        1100317,
+        1099727,
+        1099997,
+        1100146,
+        1099734,
+        1100212,
+        1099990,
+        1099808,
+        1100240,
+        1099923,
+        1099950,
+        1100056,
+        1100078,
+        1099923,
+        1100057,
+        1099914,
+        1100088,
+        1099878,
+        1100051,
+        1100230,
+        1099851,
+        1100148,
+        1099817,
+        1099934,
+        1100056,
+        1125
+      ],
+      "latency_ms": {
+        "p50": 1962.934272,
+        "p95": 2415.919104,
+        "p99": 3154.116608,
+        "p999": 3422.552064
+      },
+      "provider_check": [
+        {
+          "model": 0,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222961,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965802408,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 1,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222968,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965862531,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 2,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965663,
+          "peak_tokens_60s": 965638287,
+          "peak_rpm_fraction": 0.970036896365713,
+          "violating_windows": 0
+        },
+        {
+          "model": 3,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222964,
+          "peak_requests_60s": 965682,
+          "peak_tokens_60s": 965614400,
+          "peak_rpm_fraction": 0.9700559824247532,
+          "violating_windows": 0
+        },
+        {
+          "model": 4,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222948,
+          "peak_requests_60s": 965762,
+          "peak_tokens_60s": 965770258,
+          "peak_rpm_fraction": 0.9701363447786068,
+          "violating_windows": 0
+        },
+        {
+          "model": 5,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222941,
+          "peak_requests_60s": 965649,
+          "peak_tokens_60s": 965597877,
+          "peak_rpm_fraction": 0.9700228329537887,
+          "violating_windows": 0
+        },
+        {
+          "model": 6,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222934,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965482403,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 7,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222936,
+          "peak_requests_60s": 965650,
+          "peak_tokens_60s": 965909063,
+          "peak_rpm_fraction": 0.9700238374832117,
+          "violating_windows": 0
+        },
+        {
+          "model": 8,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222958,
+          "peak_requests_60s": 965651,
+          "peak_tokens_60s": 965711788,
+          "peak_rpm_fraction": 0.970024842012635,
+          "violating_windows": 0
+        },
+        {
+          "model": 9,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222946,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965675048,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 10,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222968,
+          "peak_requests_60s": 965650,
+          "peak_tokens_60s": 965603453,
+          "peak_rpm_fraction": 0.9700238374832117,
+          "violating_windows": 0
+        },
+        {
+          "model": 11,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222978,
+          "peak_requests_60s": 965652,
+          "peak_tokens_60s": 965638861,
+          "peak_rpm_fraction": 0.9700258465420581,
+          "violating_windows": 0
+        },
+        {
+          "model": 12,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222941,
+          "peak_requests_60s": 965652,
+          "peak_tokens_60s": 965692287,
+          "peak_rpm_fraction": 0.9700258465420581,
+          "violating_windows": 0
+        },
+        {
+          "model": 13,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222951,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965813886,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 14,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222943,
+          "peak_requests_60s": 965666,
+          "peak_tokens_60s": 965638632,
+          "peak_rpm_fraction": 0.9700399099539825,
+          "violating_windows": 0
+        },
+        {
+          "model": 15,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222963,
+          "peak_requests_60s": 965678,
+          "peak_tokens_60s": 965467176,
+          "peak_rpm_fraction": 0.9700519643070605,
+          "violating_windows": 0
+        },
+        {
+          "model": 16,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222952,
+          "peak_requests_60s": 965730,
+          "peak_tokens_60s": 965923562,
+          "peak_rpm_fraction": 0.9701041998370653,
+          "violating_windows": 0
+        },
+        {
+          "model": 17,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222962,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965825936,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 18,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222916,
+          "peak_requests_60s": 965653,
+          "peak_tokens_60s": 965896700,
+          "peak_rpm_fraction": 0.9700268510714813,
+          "violating_windows": 0
+        },
+        {
+          "model": 19,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222980,
+          "peak_requests_60s": 965663,
+          "peak_tokens_60s": 965774313,
+          "peak_rpm_fraction": 0.970036896365713,
+          "violating_windows": 0
+        },
+        {
+          "model": 20,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965664,
+          "peak_tokens_60s": 965659931,
+          "peak_rpm_fraction": 0.9700379008951362,
+          "violating_windows": 0
+        },
+        {
+          "model": 21,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965874841,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 22,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222946,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965678768,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 23,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222978,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965738777,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 24,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965710649,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 25,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222942,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965776166,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 26,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965686188,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 27,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222974,
+          "peak_requests_60s": 965691,
+          "peak_tokens_60s": 966084255,
+          "peak_rpm_fraction": 0.9700650231895618,
+          "violating_windows": 0
+        },
+        {
+          "model": 28,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222970,
+          "peak_requests_60s": 965742,
+          "peak_tokens_60s": 965641312,
+          "peak_rpm_fraction": 0.9701162541901434,
+          "violating_windows": 0
+        },
+        {
+          "model": 29,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222966,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965449255,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 30,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222947,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965762312,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 31,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222924,
+          "peak_requests_60s": 965658,
+          "peak_tokens_60s": 965785045,
+          "peak_rpm_fraction": 0.9700318737185971,
+          "violating_windows": 0
+        },
+        {
+          "model": 32,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222956,
+          "peak_requests_60s": 965669,
+          "peak_tokens_60s": 965643938,
+          "peak_rpm_fraction": 0.970042923542252,
+          "violating_windows": 0
+        },
+        {
+          "model": 33,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965743282,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 34,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222957,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965648293,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 35,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222960,
+          "peak_requests_60s": 965665,
+          "peak_tokens_60s": 965716926,
+          "peak_rpm_fraction": 0.9700389054245593,
+          "violating_windows": 0
+        },
+        {
+          "model": 36,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222937,
+          "peak_requests_60s": 965669,
+          "peak_tokens_60s": 965677665,
+          "peak_rpm_fraction": 0.970042923542252,
+          "violating_windows": 0
+        },
+        {
+          "model": 37,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222950,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965746119,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 38,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222950,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965769555,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 39,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222962,
+          "peak_requests_60s": 965687,
+          "peak_tokens_60s": 965894338,
+          "peak_rpm_fraction": 0.9700610050718691,
+          "violating_windows": 0
+        },
+        {
+          "model": 40,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222970,
+          "peak_requests_60s": 965754,
+          "peak_tokens_60s": 965801840,
+          "peak_rpm_fraction": 0.9701283085432214,
+          "violating_windows": 0
+        },
+        {
+          "model": 41,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222938,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965639955,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 42,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222954,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965804457,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 43,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222955,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965660150,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 44,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965675,
+          "peak_tokens_60s": 965800512,
+          "peak_rpm_fraction": 0.970048950718791,
+          "violating_windows": 0
+        },
+        {
+          "model": 45,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222920,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965933403,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 46,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222956,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965918766,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 47,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222944,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965638273,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 48,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222975,
+          "peak_requests_60s": 965684,
+          "peak_tokens_60s": 965739434,
+          "peak_rpm_fraction": 0.9700579914835995,
+          "violating_windows": 0
+        },
+        {
+          "model": 49,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222937,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965650380,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 50,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222972,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965643226,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 51,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222946,
+          "peak_requests_60s": 965695,
+          "peak_tokens_60s": 965689052,
+          "peak_rpm_fraction": 0.9700690413072545,
+          "violating_windows": 0
+        },
+        {
+          "model": 52,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222970,
+          "peak_requests_60s": 965739,
+          "peak_tokens_60s": 965930214,
+          "peak_rpm_fraction": 0.9701132406018739,
+          "violating_windows": 0
+        },
+        {
+          "model": 53,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222961,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965599136,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 54,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222945,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965706998,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 55,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222919,
+          "peak_requests_60s": 965662,
+          "peak_tokens_60s": 965800945,
+          "peak_rpm_fraction": 0.9700358918362898,
+          "violating_windows": 0
+        },
+        {
+          "model": 56,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222953,
+          "peak_requests_60s": 965676,
+          "peak_tokens_60s": 965630952,
+          "peak_rpm_fraction": 0.9700499552482142,
+          "violating_windows": 0
+        },
+        {
+          "model": 57,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222977,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965885727,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 58,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 965678,
+          "peak_tokens_60s": 965549916,
+          "peak_rpm_fraction": 0.9700519643070605,
+          "violating_windows": 0
+        },
+        {
+          "model": 59,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222973,
+          "peak_requests_60s": 965662,
+          "peak_tokens_60s": 965665336,
+          "peak_rpm_fraction": 0.9700358918362898,
+          "violating_windows": 0
+        },
+        {
+          "model": 60,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965668,
+          "peak_tokens_60s": 965870748,
+          "peak_rpm_fraction": 0.9700419190128289,
+          "violating_windows": 0
+        },
+        {
+          "model": 61,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222970,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965906524,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 62,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222949,
+          "peak_requests_60s": 965666,
+          "peak_tokens_60s": 965697825,
+          "peak_rpm_fraction": 0.9700399099539825,
+          "violating_windows": 0
+        },
+        {
+          "model": 63,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222972,
+          "peak_requests_60s": 965689,
+          "peak_tokens_60s": 965739239,
+          "peak_rpm_fraction": 0.9700630141307154,
+          "violating_windows": 0
+        }
+      ],
+      "provider_passed": true,
+      "max_peak_rpm_fraction": 0.9701363447786068,
+      "cpu_seconds": 376.907517,
+      "cores_used": 5.025335761337708,
+      "gc_count": 25,
+      "gc_pause_total_ms": 2.54892
+    },
+    {
+      "config": {
+        "target_per_s": 1000000,
+        "headroom": 1.03,
+        "offer": 1.1,
+        "ceiling": false,
+        "models": 64,
+        "layout": "pinned",
+        "shards": 12,
+        "generators": 2,
+        "duration_ns": 75000000000,
+        "warmup_ns": 15000000000,
+        "p50_ns": 150000000,
+        "p99_ns": 600000000,
+        "transient": 0.02,
+        "permanent": 0.01,
+        "tokens": 1000,
+        "token_jitter": 0.25,
+        "queue_s": 2,
+        "utilization": 0.97,
+        "burst_s": 1,
+        "max_attempts": 5,
+        "backoff_base_ns": 200000000,
+        "backoff_cap_ns": 10000000000,
+        "bucket_ns": 10000000,
+        "seed": 42
+      },
+      "limits": {
+        "lanes": 64,
+        "lane_cap_per_min": 965626,
+        "total_cap_per_s": 1030001.0666666667,
+        "models": [
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          },
+          {
+            "rpm": 995491,
+            "tpm": 1990982000
+          }
+        ],
+        "offered_per_s": 1100000
+      },
+      "environment": {
+        "arch": "arm64",
+        "cpus": 12,
+        "go": "go1.24.3",
+        "gomaxprocs": 12,
+        "os": "darwin"
+      },
+      "generated": 82499594,
+      "inbox_dropped": 0,
+      "accepted": 78767124,
+      "rejected": 3732470,
+      "provider_calls": 78269222,
+      "retries": 1562616,
+      "succeeded": 75741964,
+      "failed": 779322,
+      "never_fits": 0,
+      "pending_at_stop": {
+        "in_flight": 185320,
+        "queued": 2058381,
+        "retry_wait": 2137
+      },
+      "accounting_ok": true,
+      "completed_per_s": 1009232.8,
+      "offered_per_s_achieved": 1100002.2,
+      "completed_per_second": [
+        893739,
+        1099830,
+        1099671,
+        1100225,
+        1099520,
+        1100457,
+        1099927,
+        1099998,
+        1100335,
+        1099777,
+        1098585,
+        1045205,
+        1009691,
+        1009608,
+        1009712,
+        1008718,
+        1010115,
+        1008828,
+        1009610,
+        1009173,
+        1009175,
+        1009688,
+        1009409,
+        1009331,
+        1009874,
+        1009131,
+        1009336,
+        1009600,
+        1009761,
+        1009251,
+        1008615,
+        1009262,
+        1009100,
+        1009414,
+        1010256,
+        1008831,
+        1009709,
+        1008976,
+        1009750,
+        1009169,
+        1009781,
+        1009346,
+        1008934,
+        1009537,
+        1009361,
+        1008919,
+        1009921,
+        1009349,
+        1009151,
+        1009142,
+        1009664,
+        1009424,
+        1009622,
+        1009031,
+        1009921,
+        1009188,
+        1009079,
+        1009378,
+        1009565,
+        184212,
+        887864,
+        1100159,
+        1099535,
+        1099280,
+        1100688,
+        1100260,
+        1099243,
+        1101061,
+        1099449,
+        1099749,
+        1098086,
+        1042967,
+        1010177,
+        1009428,
+        1009415,
+        1038
+      ],
+      "generated_per_second": [
+        1099024,
+        1099797,
+        1099813,
+        1100218,
+        1100176,
+        1099848,
+        1099833,
+        1099877,
+        1100386,
+        1099997,
+        1099728,
+        1100028,
+        1100202,
+        1099836,
+        1100131,
+        1099854,
+        1100064,
+        1100155,
+        1099625,
+        1100069,
+        1100003,
+        1100013,
+        1100330,
+        1099752,
+        1100168,
+        1099683,
+        1099945,
+        1100113,
+        1100128,
+        1099798,
+        1100158,
+        1099973,
+        1100156,
+        1100026,
+        1100066,
+        1099623,
+        1100395,
+        1099873,
+        1099814,
+        1099999,
+        1100115,
+        1100222,
+        1099592,
+        1100384,
+        1099888,
+        1099879,
+        1099988,
+        1100095,
+        1099855,
+        1100006,
+        1100118,
+        1099733,
+        1100386,
+        1100009,
+        1100067,
+        1099843,
+        1100115,
+        1099791,
+        1099963,
+        1099845,
+        1100410,
+        1099616,
+        1100148,
+        1100019,
+        1099813,
+        1100163,
+        1100189,
+        1099605,
+        1100454,
+        1099498,
+        1100218,
+        1100023,
+        1100180,
+        1099968,
+        1100151,
+        568
+      ],
+      "latency_ms": {
+        "p50": 1962.934272,
+        "p95": 2415.919104,
+        "p99": 3154.116608,
+        "p999": 3422.552064
+      },
+      "provider_check": [
+        {
+          "model": 0,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222968,
+          "peak_requests_60s": 965650,
+          "peak_tokens_60s": 965806404,
+          "peak_rpm_fraction": 0.9700238374832117,
+          "violating_windows": 0
+        },
+        {
+          "model": 1,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222974,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965883582,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 2,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222950,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965620204,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 3,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222962,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965699872,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 4,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222956,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965625237,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 5,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222935,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965545144,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 6,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222940,
+          "peak_requests_60s": 965652,
+          "peak_tokens_60s": 965434103,
+          "peak_rpm_fraction": 0.9700258465420581,
+          "violating_windows": 0
+        },
+        {
+          "model": 7,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222951,
+          "peak_requests_60s": 965653,
+          "peak_tokens_60s": 965895330,
+          "peak_rpm_fraction": 0.9700268510714813,
+          "violating_windows": 0
+        },
+        {
+          "model": 8,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222955,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965748019,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 9,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965709842,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 10,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222963,
+          "peak_requests_60s": 965650,
+          "peak_tokens_60s": 965625791,
+          "peak_rpm_fraction": 0.9700238374832117,
+          "violating_windows": 0
+        },
+        {
+          "model": 11,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965560081,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 12,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222954,
+          "peak_requests_60s": 965664,
+          "peak_tokens_60s": 965656988,
+          "peak_rpm_fraction": 0.9700379008951362,
+          "violating_windows": 0
+        },
+        {
+          "model": 13,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965824508,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 14,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222940,
+          "peak_requests_60s": 965652,
+          "peak_tokens_60s": 965604623,
+          "peak_rpm_fraction": 0.9700258465420581,
+          "violating_windows": 0
+        },
+        {
+          "model": 15,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222961,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965551358,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 16,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222957,
+          "peak_requests_60s": 965658,
+          "peak_tokens_60s": 965840837,
+          "peak_rpm_fraction": 0.9700318737185971,
+          "violating_windows": 0
+        },
+        {
+          "model": 17,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222975,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965834270,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 18,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222912,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965911163,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 19,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222977,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965804842,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 20,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222969,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965682031,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 21,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222964,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965868300,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 22,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222940,
+          "peak_requests_60s": 965664,
+          "peak_tokens_60s": 965757075,
+          "peak_rpm_fraction": 0.9700379008951362,
+          "violating_windows": 0
+        },
+        {
+          "model": 23,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222971,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965714293,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 24,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222955,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965730842,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 25,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222944,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965729152,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 26,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222980,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965673358,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 27,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222976,
+          "peak_requests_60s": 965672,
+          "peak_tokens_60s": 966045953,
+          "peak_rpm_fraction": 0.9700459371305216,
+          "violating_windows": 0
+        },
+        {
+          "model": 28,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222963,
+          "peak_requests_60s": 965688,
+          "peak_tokens_60s": 965651880,
+          "peak_rpm_fraction": 0.9700620096012922,
+          "violating_windows": 0
+        },
+        {
+          "model": 29,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965526439,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 30,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222951,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965776885,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 31,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222920,
+          "peak_requests_60s": 965658,
+          "peak_tokens_60s": 965746440,
+          "peak_rpm_fraction": 0.9700318737185971,
+          "violating_windows": 0
+        },
+        {
+          "model": 32,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222955,
+          "peak_requests_60s": 965655,
+          "peak_tokens_60s": 965717078,
+          "peak_rpm_fraction": 0.9700288601303276,
+          "violating_windows": 0
+        },
+        {
+          "model": 33,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965740266,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 34,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222953,
+          "peak_requests_60s": 965663,
+          "peak_tokens_60s": 965689347,
+          "peak_rpm_fraction": 0.970036896365713,
+          "violating_windows": 0
+        },
+        {
+          "model": 35,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222961,
+          "peak_requests_60s": 965654,
+          "peak_tokens_60s": 965702985,
+          "peak_rpm_fraction": 0.9700278556009044,
+          "violating_windows": 0
+        },
+        {
+          "model": 36,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222948,
+          "peak_requests_60s": 965671,
+          "peak_tokens_60s": 965660388,
+          "peak_rpm_fraction": 0.9700449326010984,
+          "violating_windows": 0
+        },
+        {
+          "model": 37,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222955,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965768235,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 38,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222947,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965782602,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 39,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222959,
+          "peak_requests_60s": 965690,
+          "peak_tokens_60s": 965837341,
+          "peak_rpm_fraction": 0.9700640186601386,
+          "violating_windows": 0
+        },
+        {
+          "model": 40,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222964,
+          "peak_requests_60s": 965688,
+          "peak_tokens_60s": 965750810,
+          "peak_rpm_fraction": 0.9700620096012922,
+          "violating_windows": 0
+        },
+        {
+          "model": 41,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222953,
+          "peak_requests_60s": 965664,
+          "peak_tokens_60s": 965669768,
+          "peak_rpm_fraction": 0.9700379008951362,
+          "violating_windows": 0
+        },
+        {
+          "model": 42,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222965,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965838073,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 43,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222949,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965642120,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 44,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222962,
+          "peak_requests_60s": 965666,
+          "peak_tokens_60s": 965729634,
+          "peak_rpm_fraction": 0.9700399099539825,
+          "violating_windows": 0
+        },
+        {
+          "model": 45,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222914,
+          "peak_requests_60s": 965658,
+          "peak_tokens_60s": 965997899,
+          "peak_rpm_fraction": 0.9700318737185971,
+          "violating_windows": 0
+        },
+        {
+          "model": 46,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222954,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965951857,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 47,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222949,
+          "peak_requests_60s": 965659,
+          "peak_tokens_60s": 965599650,
+          "peak_rpm_fraction": 0.9700328782480203,
+          "violating_windows": 0
+        },
+        {
+          "model": 48,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222979,
+          "peak_requests_60s": 965664,
+          "peak_tokens_60s": 965707005,
+          "peak_rpm_fraction": 0.9700379008951362,
+          "violating_windows": 0
+        },
+        {
+          "model": 49,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222948,
+          "peak_requests_60s": 965676,
+          "peak_tokens_60s": 965666166,
+          "peak_rpm_fraction": 0.9700499552482142,
+          "violating_windows": 0
+        },
+        {
+          "model": 50,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965711589,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 51,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222945,
+          "peak_requests_60s": 965699,
+          "peak_tokens_60s": 965786095,
+          "peak_rpm_fraction": 0.970073059424947,
+          "violating_windows": 0
+        },
+        {
+          "model": 52,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222967,
+          "peak_requests_60s": 965679,
+          "peak_tokens_60s": 965853600,
+          "peak_rpm_fraction": 0.9700529688364837,
+          "violating_windows": 0
+        },
+        {
+          "model": 53,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222954,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965574731,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 54,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222950,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965753209,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 55,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222932,
+          "peak_requests_60s": 965657,
+          "peak_tokens_60s": 965782940,
+          "peak_rpm_fraction": 0.970030869189174,
+          "violating_windows": 0
+        },
+        {
+          "model": 56,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222957,
+          "peak_requests_60s": 965673,
+          "peak_tokens_60s": 965577775,
+          "peak_rpm_fraction": 0.9700469416599447,
+          "violating_windows": 0
+        },
+        {
+          "model": 57,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222968,
+          "peak_requests_60s": 965660,
+          "peak_tokens_60s": 965759983,
+          "peak_rpm_fraction": 0.9700338827774435,
+          "violating_windows": 0
+        },
+        {
+          "model": 58,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222962,
+          "peak_requests_60s": 965656,
+          "peak_tokens_60s": 965623914,
+          "peak_rpm_fraction": 0.9700298646597508,
+          "violating_windows": 0
+        },
+        {
+          "model": 59,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222964,
+          "peak_requests_60s": 965668,
+          "peak_tokens_60s": 965699550,
+          "peak_rpm_fraction": 0.9700419190128289,
+          "violating_windows": 0
+        },
+        {
+          "model": 60,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222969,
+          "peak_requests_60s": 965663,
+          "peak_tokens_60s": 965845588,
+          "peak_rpm_fraction": 0.970036896365713,
+          "violating_windows": 0
+        },
+        {
+          "model": 61,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222977,
+          "peak_requests_60s": 965673,
+          "peak_tokens_60s": 965873103,
+          "peak_rpm_fraction": 0.9700469416599447,
+          "violating_windows": 0
+        },
+        {
+          "model": 62,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222943,
+          "peak_requests_60s": 965661,
+          "peak_tokens_60s": 965698219,
+          "peak_rpm_fraction": 0.9700348873068667,
+          "violating_windows": 0
+        },
+        {
+          "model": 63,
+          "rpm": 995491,
+          "tpm": 1990982000,
+          "calls": 1222969,
+          "peak_requests_60s": 965702,
+          "peak_tokens_60s": 965707402,
+          "peak_rpm_fraction": 0.9700760730132166,
+          "violating_windows": 0
+        }
+      ],
+      "provider_passed": true,
+      "max_peak_rpm_fraction": 0.9700760730132166,
+      "cpu_seconds": 372.8290380000001,
+      "cores_used": 4.970984770884081,
+      "gc_count": 26,
+      "gc_pause_total_ms": 3.320792
+    }
+  ]
+}
