@@ -1,0 +1,44 @@
+name: scenario2
+description: >
+  Different models and changing limits. Model A at 30,000 RPM / 60M TPM, model B at 20,000 RPM / 40M TPM,
+  both offered more than their limit. At t=120 s model A drops to 5,000 RPM; at t=270 s it is restored.
+  Model B is never changed. Pass: both models stay within their current limits at every send; model A
+  settles at its new limit after each change with no restart; model B stays at >= 90% of its limit
+  every minute, including while A is constrained.
+
+warmup_s: 60
+utilization: 0.97
+gateway: { deadline_s: 120 }
+
+models:
+  model-a:
+    rpm: 30000
+    tpm: 60000000
+    latency: { p50_ms: 150, p99_ms: 600 }
+    transient: { "503": 0.01 }
+    permanent: { "400": 0.005 }
+  model-b:
+    rpm: 20000
+    tpm: 40000000
+    latency: { p50_ms: 300, p99_ms: 1200 }
+    transient: { "503": 0.01 }
+    permanent: { "400": 0.005 }
+
+load:
+  rate: 1000                                # 600/s to A (36k/min), 400/s to B (24k/min)
+  duration_s: 420
+  models: { model-a: 0.6, model-b: 0.4 }
+  # Single requests on purpose: batch admission is all-or-nothing, so a batch mixing
+  # models would be rejected whole once A's queue is full, dragging B down with it.
+  batch_size: 1
+  tokens: 1000
+
+limit_changes:
+  - { at_s: 120, model: model-a, rpm: 5000 }
+  - { at_s: 270, model: model-a, rpm: 30000 }
+
+drain_timeout_s: 240
+
+checks:
+  adjusts: [{ model: model-a, min_fraction: 0.8 }]
+  isolation: [{ model: model-b, min_fraction: 0.9 }]

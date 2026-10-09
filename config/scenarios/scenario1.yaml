@@ -1,0 +1,30 @@
+name: scenario1
+description: >
+  Reach the available provider capacity. One model at 50,000 RPM / 100M TPM; 1,000-token
+  requests offered at 1,250 req/s (1.5x the 833/s capacity) for 6 minutes. Pass: every full
+  minute after a 1-minute warm-up completes >= 90% of the RPM limit; no 60 s window ever
+  exceeds either limit; every request is accounted for.
+
+warmup_s: 60
+utilization: 0.97
+gateway: { deadline_s: 120 }
+
+models:
+  model-a:
+    rpm: 50000
+    tpm: 100000000
+    latency: { p50_ms: 150, p99_ms: 600 }
+    transient: { "503": 0.01, "timeout": 0.001 }
+    permanent: { "400": 0.005 }
+
+load:
+  rate: 1250            # requests per second offered
+  duration_s: 360
+  models: { model-a: 1 }
+  batch_size: 1         # single requests (POST /v1/requests)
+  tokens: 1000
+
+drain_timeout_s: 240
+
+checks:
+  capacity: [{ model: model-a, min_fraction: 0.9 }]

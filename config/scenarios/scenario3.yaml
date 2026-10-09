@@ -1,0 +1,42 @@
+name: scenario3
+description: >
+  Asynchronous batch completion. One batch of 10,000 requests across two models with a callback URL.
+  The simulator injects transient failures (503s and timeouts) and permanent failures (400/413);
+  the callback receiver rejects the first two delivery attempts. Pass: ack within 1 s; callback only
+  after every request is final; delivery succeeds after the receiver recovers; the callback summary
+  equals GET /v1/batches/{id}; every request id appears exactly once in the results.
+
+warmup_s: 0
+utilization: 0.97
+gateway: { deadline_s: 300 }
+hang_s: 30            # a "timeout" outcome hangs this long; the gateway gives up after 10 s and retries
+
+models:
+  model-a:
+    rpm: 30000
+    tpm: 60000000
+    latency: { p50_ms: 150, p99_ms: 600 }
+    transient: { "503": 0.03, "timeout": 0.002 }
+    permanent: { "400": 0.01 }
+  model-b:
+    rpm: 20000
+    tpm: 40000000
+    latency: { p50_ms: 300, p99_ms: 1200 }
+    transient: { "503": 0.03, "500": 0.01 }
+    permanent: { "413": 0.01 }
+
+load:
+  rate: 10000           # one batch of 10,000 ...
+  duration_s: 1         # ... sent once
+  batch_size: 10000
+  models: { model-a: 0.5, model-b: 0.5 }
+  tokens: 1000
+  callback: true
+
+callback:
+  fail_first: 2         # receiver answers 503 to the first two deliveries
+
+drain_timeout_s: 300
+
+checks:
+  batch: { max_ack_ms: 1000, rejected_callbacks: 2 }
